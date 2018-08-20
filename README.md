@@ -14,7 +14,7 @@ This project showcases among other the following functionality:
  * Asynchronous HTTP requests to custom NodeJS backend
  
  ### Configuration
- Place your backend endpoint URL in the __.env__ file 
+ Place your backend endpoint URL in `PROJECT_ROOT/.env` and your Google Maps API key in `PROJECT_ROOT/public/index.html`.
  
  ### Data generation
  The accompanying backend repository houses a `src/data` subdirectory.
@@ -27,10 +27,10 @@ This project showcases among other the following functionality:
  4. Click on __Generate__
  5. Save the resulting json locally (e.g. __restaurants.json__)
  6. Run the _python_ script __mongo_converter.py__ to remove the quotation marks from the floating point values: `python3 mongo_converter.py -s /path/to/restaurants.json`
- 7. The resulting __compatible_restaurants.json__ can be import into MongoDB: `mongoimport -h ds125602.mlab.com:25602 -d DATABASE -u USER -p PASSWORD --collection restaurants --file compatible_restaurants.json --jsonArray`
+ 7. The resulting __compatible_restaurants.json__ can be import into MongoDB: `mongoimport -h DATABASE_HOST -d DATABASE -u USER -p PASSWORD --collection restaurants --file compatible_restaurants.json --jsonArray`
  
  ### ToDo
- * UI design is not responsive. Especially within the filters text flows out of the container
+ * UI is not responsive. Especially within the filters text flows out of the container
  * Data generation process is rather tedious and incomplete
  * Containerize both fronted and backend so that a one-click installation process can be run on a cloud providers offerings with _Docker_
  * Add comments
