@@ -1,5 +1,5 @@
 const googleMapsClient = require("@google/maps").createClient({
-	key: "YOUR_GOOGLE_MAPS_API_KEY",
+	key: "AIzaSyD59SFZWT5UjO4StmPUZFJb9HGukgSh4Go",
 	Promise: Promise,
 	rate: {
 		limit: 10,

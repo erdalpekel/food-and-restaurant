@@ -2,7 +2,7 @@ import HttpService from "./HttpService";
 
 export default class RestaurantsService {
 	static baseURL() {
-		return "http://localhost:3000/restaurant";
+		return process.env.REACT_APP_BACKEND_ENDPOINT + "/restaurant";
 	}
 
 	static query(parameters) {

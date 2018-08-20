@@ -1,16 +1,7 @@
 export default class HttpService {
 	static get(url, onSuccess, onError) {
-		let token = window.localStorage["jwtToken"];
-
-		let header = new Headers();
-
-		if (token) {
-			header.append("Authorization", `Bearer ${token}`);
-		}
-
 		fetch(url, {
-			method: "GET",
-			headers: header
+			method: "GET"
 		})
 			.then(resp => {
 				if (resp.ok) {
@@ -22,9 +13,6 @@ export default class HttpService {
 				}
 			})
 			.then(resp => {
-				if (resp.hasOwnProperty("token")) {
-					window.localStorage["jwtToken"] = resp.token;
-				}
 				onSuccess(resp);
 			})
 			.catch(e => {
