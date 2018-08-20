@@ -1,7 +1,14 @@
 {
-  "name": "restaurant-finder",
+  "name": "food-and-restaurant",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Erdal Pekel",
+    "email": "erdal.pekel.dev@gmail.com",
+    "url": "https://github.com/erdalpekel"
+  },
+  "homepage": "https://github.com/erdalpekel/food-and-restaurant#readme",
   "dependencies": {
     "@google/maps": "^0.5.5",
     "google-libphonenumber": "^3.1.11",
