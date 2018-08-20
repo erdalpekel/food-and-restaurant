@@ -1,6 +1,6 @@
 # Food & Restaurant Catalogue
 
-This is food catalogue web app built with ReactJS, NodeJS and MongoDB.
+This repository is a food catalogue web app built with ReactJS, NodeJS and MongoDB.
 The accompanying NodeJS backend is located [here](). 
 
 This project showcases among other the following functionality:
