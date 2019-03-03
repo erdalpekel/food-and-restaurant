@@ -16,7 +16,7 @@
     "react-dom": "^16.4.2",
     "react-google-maps": "^9.4.5",
     "react-md": "^1.5.0",
-    "react-scripts": "1.1.4",
+    "react-scripts": "2.1.5",
     "webfontloader": "^1.6.28"
   },
   "scripts": {
@@ -26,6 +26,12 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
-  }
+    "prettier": "^1.16.4"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
